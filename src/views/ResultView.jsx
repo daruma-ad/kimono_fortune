@@ -58,6 +58,32 @@ export default function ResultView() {
                     <span>◆</span>
                 </div>
 
+                {/* Seasonal Info */}
+                {fortune.seasonalMessage && (
+                    <section className={`result-section result-season-section ${isVisible ? 'result-section--visible' : ''}`}>
+                        <h2 className="result-section-title">今の季節</h2>
+                        <div className="result-season-card">
+                            <div className="result-season-term">
+                                <span className="result-season-label">二十四節気</span>
+                                <div className="result-season-content">
+                                    <span className="result-season-name">{fortune.seasonalMessage.solarTerm.name}</span>
+                                    <span className="result-season-reading">{fortune.seasonalMessage.solarTerm.reading}</span>
+                                </div>
+                                <p className="result-season-desc">{fortune.seasonalMessage.solarTerm.description}</p>
+                            </div>
+                            <div className="result-season-divider"></div>
+                            <div className="result-season-pentad">
+                                <span className="result-season-label">七十二候・{fortune.seasonalMessage.pentadLabel}</span>
+                                <div className="result-season-content">
+                                    <span className="result-season-name">{fortune.seasonalMessage.pentad.name}</span>
+                                    <span className="result-season-reading">{fortune.seasonalMessage.pentad.reading}</span>
+                                </div>
+                                <p className="result-season-desc">{fortune.seasonalMessage.pentad.description}</p>
+                            </div>
+                        </div>
+                    </section>
+                )}
+
                 {/* Lucky Color */}
                 <section className={`result-section result-color-section ${isVisible ? 'result-section--visible' : ''}`}>
                     <h2 className="result-section-title">今日のラッキーカラー</h2>

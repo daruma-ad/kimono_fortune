@@ -2,6 +2,7 @@
  * おみくじロジック
  * 生年月日 + 選択アイテム + 今日の日付からハッシュ的に結果を決定
  */
+import { getSeasonalMessage } from '../data/seasonData';
 
 const traditionalColors = [
     { name: '瑠璃色', nameEn: 'Ruri-iro', hex: '#1E50A2', description: '深く澄んだ青。心を落ち着かせ、直感力を高めてくれます。' },
@@ -118,10 +119,13 @@ export function generateFortune(birthday, itemId) {
     const fortuneText = fortuneTexts[fortuneIndex];
     const recommendation = recommendations[recIndex](luckyColor.name);
 
+    const seasonalMessage = getSeasonalMessage(today);
+
     return {
         luckyColor,
         luckyPattern,
         fortuneText,
         recommendation,
+        seasonalMessage,
     };
 }

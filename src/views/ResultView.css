@@ -98,20 +98,24 @@
     transform: translateY(0);
 }
 
-.result-color-section {
+.result-season-section {
     transition-delay: 0.15s;
 }
 
-.result-pattern-section {
+.result-color-section {
     transition-delay: 0.3s;
 }
 
-.result-fortune-section {
+.result-pattern-section {
     transition-delay: 0.45s;
 }
 
-.result-promo-section {
+.result-fortune-section {
     transition-delay: 0.6s;
+}
+
+.result-promo-section {
+    transition-delay: 0.75s;
 }
 
 .result-section-title {
@@ -413,4 +417,60 @@
     color: var(--color-text-muted);
     font-size: var(--font-size-xs);
     letter-spacing: 0.1em;
+}
+
+/* Seasonal Section Styles */
+.result-season-card {
+    padding: var(--space-lg);
+    border-radius: var(--radius-lg);
+    background: var(--color-card-bg);
+    border: 1.5px solid var(--color-card-border);
+    backdrop-filter: blur(8px);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}
+
+.result-season-term,
+.result-season-pentad {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+}
+
+.result-season-label {
+    font-size: var(--font-size-xs);
+    color: var(--color-enji);
+    letter-spacing: 0.1em;
+    font-weight: 500;
+}
+
+.result-season-content {
+    display: flex;
+    align-items: baseline;
+    gap: var(--space-sm);
+}
+
+.result-season-name {
+    font-size: var(--font-size-xl);
+    font-weight: 600;
+    color: var(--color-text);
+    letter-spacing: 0.1em;
+}
+
+.result-season-reading {
+    font-size: var(--font-size-xs);
+    color: var(--color-text-muted);
+}
+
+.result-season-desc {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-light);
+    line-height: 1.6;
+}
+
+.result-season-divider {
+    height: 1px;
+    background: var(--color-divider);
+    width: 100%;
 }
