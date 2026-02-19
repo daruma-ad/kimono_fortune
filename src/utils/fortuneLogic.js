@@ -4,18 +4,28 @@
  */
 
 const traditionalColors = [
-    { name: '瑠璃色', nameEn: 'Ruri-iro', hex: '#1E50A2', description: '深く澄んだ青' },
-    { name: '山吹色', nameEn: 'Yamabuki-iro', hex: '#F8B400', description: '鮮やかな黄金色' },
-    { name: '臙脂色', nameEn: 'Enji-iro', hex: '#9B2335', description: '深みのある赤' },
-    { name: '若竹色', nameEn: 'Wakatake-iro', hex: '#68BE8D', description: '爽やかな緑' },
-    { name: '藤色', nameEn: 'Fuji-iro', hex: '#A187BE', description: '淡く優雅な紫' },
-    { name: '珊瑚色', nameEn: 'Sango-iro', hex: '#F5A3A3', description: '柔らかなピンク' },
-    { name: '群青色', nameEn: 'Gunjou-iro', hex: '#4C6CB3', description: '力強い青' },
-    { name: '抹茶色', nameEn: 'Matcha-iro', hex: '#7B8D42', description: '落ち着いた緑' },
-    { name: '桜鼠', nameEn: 'Sakura-nezumi', hex: '#E3C4C4', description: '上品なくすみピンク' },
-    { name: '柿色', nameEn: 'Kaki-iro', hex: '#ED6D3D', description: '温かみのある橙' },
-    { name: '藍色', nameEn: 'Ai-iro', hex: '#264061', description: '深く静かな青' },
-    { name: '銀鼠', nameEn: 'Gin-nezumi', hex: '#91989F', description: '洗練されたグレー' },
+    { name: '瑠璃色', nameEn: 'Ruri-iro', hex: '#1E50A2', description: '深く澄んだ青。心を落ち着かせ、直感力を高めてくれます。' },
+    { name: '山吹色', nameEn: 'Yamabuki-iro', hex: '#F8B400', description: '鮮やかな黄金色。金運や豊かさを象徴する縁起の良い色です。' },
+    { name: '臙脂色', nameEn: 'Enji-iro', hex: '#9B2335', description: '深みのある赤。情熱と生命力を呼び覚ましてくれます。' },
+    { name: '若竹色', nameEn: 'Wakatake-iro', hex: '#68BE8D', description: '爽やかな緑。成長と若々しいエネルギーを与えてくれます。' },
+    { name: '藤色', nameEn: 'Fuji-iro', hex: '#A187BE', description: '淡く優雅な紫。高貴さと品格を引き立てる色です。' },
+    { name: '珊瑚色', nameEn: 'Sango-iro', hex: '#F5A3A3', description: '柔らかなピンク。優しさと幸福感をもたらします。' },
+    { name: '群青色', nameEn: 'Gunjou-iro', hex: '#4C6CB3', description: '力強い青。冷静な判断力と誠実さを表します。' },
+    { name: '抹茶色', nameEn: 'Matcha-iro', hex: '#7B8D42', description: '落ち着いた緑。平穏な心と調和をもたらします。' },
+    { name: '桜鼠', nameEn: 'Sakura-nezumi', hex: '#E3C4C4', description: '上品なくすみピンク。控えめながらも愛らしさを演出します。' },
+    { name: '柿色', nameEn: 'Kaki-iro', hex: '#ED6D3D', description: '温かみのある橙。実りと活力を象徴する色です。' },
+    { name: '藍色', nameEn: 'Ai-iro', hex: '#264061', description: '深く静かな青。信頼と知性を印象づけます。' },
+    { name: '銀鼠', nameEn: 'Gin-nezumi', hex: '#91989F', description: '洗練されたグレー。都会的でスマートな印象を与えます。' },
+    { name: '紅梅色', nameEn: 'Koubai-iro', hex: '#E86B79', description: '春の訪れを告げる梅の色。明るい希望と可愛らしさを運びます。' },
+    { name: '萌黄', nameEn: 'Moegi', hex: '#aacf53', description: '春先に萌え出る若葉の色。新しいことへの挑戦を応援します。' },
+    { name: '菫色', nameEn: 'Sumire-iro', hex: '#7058a3', description: '可憐なスミレの色。慎ましさと誠実な愛を表します。' },
+    { name: '黄金色', nameEn: 'Kogane-iro', hex: '#e6b422', description: '稲穂のような輝く黄色。豊穣と成功のシンボルです。' },
+    { name: '常磐色', nameEn: 'Tokiwa-iro', hex: '#007b43', description: '松の葉のような深い緑。変わらぬ強さと永遠を意味します。' },
+    { name: '牡丹色', nameEn: 'Botan-iro', hex: '#c80852', description: '百花の王、牡丹の色。華やかさと自信を与えてくれます。' },
+    { name: '空色', nameEn: 'Sora-iro', hex: '#a0d8ef', description: '晴れ渡る空の色。晴れやかな気分と開放感をもたらします。' },
+    { name: '鬱金色', nameEn: 'Ukon-iro', hex: '#fabf14', description: '鮮やかな黄色。邪気を払い、明るい未来を照らします。' },
+    { name: '浅葱色', nameEn: 'Asagi-iro', hex: '#00a3af', description: '薄い藍色。若々しさと爽快感を感じさせる色です。' },
+    { name: '鳶色', nameEn: 'Tobi-iro', hex: '#95483f', description: '赤みのある茶色。落ち着きと大人の余裕を醸し出します。' },
 ];
 
 const traditionalPatterns = [
@@ -40,6 +50,22 @@ const fortuneTexts = [
     '感性が豊かになる日。美しいものに囲まれると心が満たされます。季節の色を楽しんでみてください。',
     '安定した運気の日。いつもの自分らしさを大切に。身近な人への感謝の気持ちを伝えると、さらに良い一日に。',
     '変化を楽しめる日。新しい色や柄に挑戦してみると、思わぬ発見があるかもしれません。冒険心を持って。',
+    // Added
+    '小さな幸せがたくさん見つかる予感。道端の花や空の色に目を向けてみて。心が洗われるような発見があるでしょう。',
+    '努力が実を結ぶ兆し。これまで続けてきたことが形になりそうです。自信を持って進んでください。',
+    '懐かしい人からの連絡があるかも。旧交を温めることで、新しいインスピレーションが湧いてきます。',
+    '学びの意欲が高まる日。興味のあることについて深く調べてみると、大きな収穫があります。',
+    'リフレッシュに最適な日。お気に入りの場所に出かけたり、美味しいお茶とお菓子で一息つきましょう。',
+    '魅力が開花する日。あなたの何気ない仕草や言葉が、誰かの心を温かくします。笑顔を大切に。',
+    '整理整頓が吉。身の回りを整えることで、頭の中もすっきりクリアになります。良い気の流れを作りましょう。',
+    '冒険心が幸運の鍵。行ったことのない道を通ってみたり、初めてのお店に入ってみると良いことがありそう。',
+    '感謝の気持ちを言葉にすると良い日。「ありがとう」の一言で、人間関係がより円滑になります。',
+    '芸術的な感性が光る日。美術館に行ったり、美しい和菓子を目で楽しんだりするのがおすすめです。',
+    '健康運が上昇中。少し早起きして朝日を浴びたり、深呼吸をすることで、さらに活力が湧いてきます。',
+    'チームワークが重要な日。周りの人と協力することで、一人ではできない大きな成果が得られます。',
+    '金運が好調な兆し。長く使える良いものとの出会いがあるかもしれません。直感を信じて選んでみて。',
+    '対人運がアップ。聞き上手になることで、相手からの信頼が深まります。相槌は丁寧に。',
+    '自分へのご褒美をあげたい日。頑張っている自分を労って、少し贅沢な時間を過ごしてください。',
 ];
 
 const recommendations = [
@@ -48,6 +74,12 @@ const recommendations = [
     (color) => `${color}を暮らしに取り入れてみませんか。ハンカチやポーチなど、身近なアイテムから始めてみましょう。`,
     (color) => `今日のあなたには${color}がぴったり。お出かけの際にはぜひ意識してみてください。`,
     (color) => `${color}が幸運を運んでくれる日。着物に限らず、普段使いの小物にも取り入れると◎。`,
+    // Added
+    (color) => `足元に${color}を取り入れてみて。草履の鼻緒や足袋のワンポイントに。`,
+    (color) => `スマホの待ち受け画面を${color}にすると、見るたびに運気がチャージされます。`,
+    (color) => `${color}のネイルやアクセサリーで、指先から華やかに。気分も運気も上がります。`,
+    (color) => `ステーショナリーに${color}を選んでみて。手帳やペンなど、よく使う道具に取り入れるのがコツ。`,
+    (color) => `今日は${color}の食材を使った料理を食べてみては？身体の内側からパワーが湧いてきます。`,
 ];
 
 /**
